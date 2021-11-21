@@ -1,0 +1,9 @@
+version: '3.2'
+
+services:
+  deb:
+    build:
+      context: ../..
+      dockerfile: ./site/build/Dockerfile
+    restart: on-failure
+    command: [ "sleep","infinity" ]

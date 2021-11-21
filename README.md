@@ -4,3 +4,5 @@ Gluon Site Config Directory for Hood CGN
 Check Branches for different Gluon Releases.
 
 To build a KBU Release use the corresponding version tag of ff-kbu/gluon
+
+see [build/README.md](build/README.md) for build instructions
