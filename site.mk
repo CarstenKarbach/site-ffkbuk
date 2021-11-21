@@ -4,31 +4,25 @@
 #		specify gluon/openwrt packages to include here
 #		The gluon-mesh-batman-adv-* package must come first because of the dependency resolution
 
+GLUON_FEATURES := \
+        autoupdater \
+        config-mode-geo-location-osm \
+        ebtables-filter-multicast \
+        ebtables-filter-ra-dhcp \
+        ebtables-limit-arp \
+        mesh-batman-adv-15 \
+        respondd \
+        status-page \
+        web-advanced \
+        web-private-wifi \
+        web-wizard
+
 GLUON_SITE_PACKAGES := \
-	gluon-mesh-batman-adv-15 \
-	gluon-respondd \
-	gluon-autoupdater \
-	gluon-config-mode-autoupdater \
-	gluon-config-mode-contact-info \
-	gluon-config-mode-core \
-	gluon-config-mode-geo-location \
-	gluon-config-mode-hostname \
-	gluon-config-mode-mesh-vpn \
-	gluon-ebtables-filter-multicast \
-	gluon-ebtables-filter-ra-dhcp \
-	gluon-neighbour-info \
-	gluon-luci-admin \
-	gluon-luci-autoupdater \
-	gluon-luci-portconfig \
-	gluon-luci-wifi-config \
-	gluon-next-node \
-	gluon-mesh-vpn-fastd \
-	gluon-radvd \
-	gluon-setup-mode \
-	gluon-status-page \
-	haveged \
-	iptables \
-	iwinfo
+        haveged \
+        iptables \
+        iwinfo \
+        gluon-mesh-vpn-fastd
+
 
 # basic support for USB stack
 USB_PACKAGES_BASIC := \
